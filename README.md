@@ -112,6 +112,7 @@ us_beds <- us_hospitals %>%
 total <- cbind(US_cases, us_beds) #joining two data sets
 total2 <- total[,-3]
   
+  #graph 2
 total2 %>%
   ggplot(aes(x = total_cases, y=Total.beds))+
   geom_point(alpha = 0.5)+
